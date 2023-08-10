@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:ital,wght@0,700;1,400&family=League+Spartan:wght@300&family=Merriweather:ital,wght@1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: "Poppins", sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h3{
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+}
+h6{
+    font-size: 20px;
+    line-height: 32px;
+    color: #6c6c6c;
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    padding: 1rem 6.6rem; 
+    transition: all 0.5s ease;
+    background: transparent;
+    z-index: 11111;
+}
+
+
+.nav .navbar-toggler{
+    display: none;
+    border: none;
+    outline: none;
+
+
+}
+.nav .navbar-toggler .toggler-icon{
+    width: 27px;
+    height: 3px;
+    background-color: #121212;
+    position: relative;
+    display: block;
+    margin: 5px 0px;
+    transition: all 0.3s ease-out 0s;
+}
+.nav .menuebar .menueitems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .menuebar .menueitems li {
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav .menuebar .menueitems li a {
+    color: #121212;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav .menuebar .menueitems li a:hover{
+    color: blue
+ 
+   
+   
+}
+
+.nav .navbarsocial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .navbarsocial span{
+    font-size: 18px;
+    font-weight: 600px;
+    padding-right: 10px;
+    color: #000;
+}
+
+
+.nav .navbarsocial ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .navbarsocial ul li{
+    padding: 0 7px;
+    
+}
+
+.nav .navbarsocial ul li a{
+    color: #000;
+    font-size: 22px;
+}
+.nav .navbarsocial ul li a:hover{
+    color: blue;
+}
+.nav .navbarsocial ul li a.ig:hover{
+    color:#bc2a8d	;
+}
+
+.back{
+    background-image: url("Assets/backgroundimg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+.back .overlay{
+    background: linear-gradient(156deg, rgba(187,187,231,0.7458333675266982) 0%, rgba(18,152,215,0.6085784655659139) 100%);
+    width: 100%;
+    height: 100%;
+
+}
+.wave-container {
+    background: #EEE;
+  }
+ 
+  .heroShape img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+  
+  }
+
+  .here-text{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50% , -50%);/*Need to Study this Property*/
+    
+    text-align: center;
+  }
+  .here-text h6{
+    color: #FFF;
+  }
+  .here-text .main-btn{
+    display: inline-block; /* Need to study this property  */
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;/*Need to Study this Property*/
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #981313;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s ease-out 0s;
+  }
+ 
+  .header-btn li{
+    display: inline-block;
+    margin: 10px 10px 0 0 ;
+  }
+
+  .header-btn li a.main-btn{
+    background-color: #FFF;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 0;
+    line-height: 50px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    z-index: 5;
+  }
+  .here-text .header-btn .btn-one{
+    color: white;
+  }
+
+  .here-text .header-btn .btn-one::before{
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(to right , #535CF1,#A147E4);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background-position: right center;
+}
+.here-text .header-btn .btn-one:hover:before{
+    background-image: linear-gradient(to left , #535CF1,#A147E4);
+    background-position: left center;
+}
